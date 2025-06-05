@@ -150,7 +150,7 @@
         projectCard.style.animationDelay = `${index * 0.1}s`;
 
         projectCard.innerHTML = `
-          <div class="project-icon">${project.icon}</div>
+          <img class="project-icon" src="${project.url}/favicon.ico" alt="${project.name} Icon"/>
           <h3>${project.name}</h3>
           <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 15px;">${project.description}</p>
           <a href="${project.url}" class="project-link" target="_blank">Visit Project →</a>

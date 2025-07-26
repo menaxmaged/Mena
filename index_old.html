@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mena Maged | Creative Developer & Digital Innovator</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Mena Maged - Creative Developer & Digital Innovator specializing in web development, mobile apps, gaming, and IT solutions. Based in Cairo, Egypt.">
+  <meta name="keywords"
+    content="Mena Maged, web developer, mobile app developer, creative developer, digital innovator, Cairo, Egypt, portfolio">
+  <meta name="author" content="Mena Maged">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Mena Maged | Creative Developer & Digital Innovator">
+  <meta property="og:description"
+    content="Crafting exceptional digital experiences across music, gaming, apps, and web platforms">
+  <meta property="og:image" content="https://www.gravatar.com/avatar/6081a95fe5ac5d6a8467ca1b3401baa7?size=1200">
+  <meta property="og:url" content="https://menaxmaged.github.io/Mena">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mena Maged | Creative Developer & Digital Innovator">
+  <meta name="twitter:description"
+    content="Crafting exceptional digital experiences across music, gaming, apps, and web platforms">
+  <meta name="twitter:image" content="https://www.gravatar.com/avatar/6081a95fe5ac5d6a8467ca1b3401baa7?size=1200">
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🅼</text></svg>">
+  <link rel="apple-touch-icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🅼</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            'inter': ['Inter', 'sans-serif'],
+            'manrope': ['Manrope', 'sans-serif'],
+            'mono': ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            gray: {
+              50: '#f8fafc',
+              100: '#f1f5f9',
+              200: '#e2e8f0',
+              300: '#cbd5e1',
+              400: '#94a3b8',
+              500: '#64748b',
+              600: '#475569',
+              700: '#334155',
+              800: '#1e293b',
+              850: '#172033',
+              900: '#0f172a',
+              950: '#020617',
+            },
+            blue: {
+              50: '#eff6ff',
+              500: '#3b82f6',
+              600: '#2563eb',
+            },
+            emerald: {
+              400: '#34d399',
+              500: '#10b981',
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.6s ease-out',
+            'slide-up': 'slideUp 0.6s ease-out',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Minimal Custom Styles -->
+  <style>
+    body {
+      background: #0f172a;
+    }
+    
+    .glass {
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(148, 163, 184, 0.1);
+    }
+    
+    /* Smooth scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #1e293b;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #475569;
+      border-radius: 3px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: #64748b;
+    }
+
+    /* Focus states */
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+      border-color: #3b82f6;
+    }
+  </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mena Maged",
+    "jobTitle": "Creative Developer & Digital Innovator",
+    "description": "Creative Developer specializing in web development, mobile apps, gaming, and IT solutions",
+    "url": "https://menaxmaged.github.io/Mena",
+    "email": "menaxmaged@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cairo",
+      "addressCountry": "Egypt"
+    },
+    "sameAs": [
+      "https://github.com/menaxmaged"
+    ]
+  }
+  </script>
+</head>
+
+<body class="font-inter bg-neutral-900 text-neutral-100 overflow-x-hidden">
+  <!-- Loading Screen -->
+  <div id="loading-screen"
+    class="fixed inset-0 bg-neutral-900 flex items-center justify-center z-50 transition-opacity duration-300">
+    <div class="text-center">
+      <div class="w-16 h-16 border-4 border-neutral-600/30 border-t-primary-500 rounded-full animate-spin mx-auto mb-4"></div>
+      <div class="text-neutral-200 font-manrope text-lg font-medium">Loading Portfolio...</div>
+    </div>
+  </div>
+
+  <!-- Animated Background -->
+  <div class="fixed inset-0 bg-gradient-animated -z-10"></div>
+
+  <!-- Scroll Progress -->
+  <div class="fixed top-0 left-0 w-full h-1 bg-white/10 z-50">
+    <div id="scroll-progress"
+      class="h-full bg-gradient-to-r from-primary-500 to-accent-500 w-0 transition-all duration-150"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav
+    class="fixed top-4 left-1/2 transform -translate-x-1/2 z-40 px-6 py-3 glass rounded-2xl transition-all duration-300"
+    id="navbar">
+    <div class="flex items-center space-x-8">
+      <a href="#home" class="text-2xl font-bold text-gradient">MM</a>
+
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#home" class="nav-link text-neutral-300 hover:text-neutral-100 transition-colors duration-300 relative">Home</a>
+        <a href="#about"
+          class="nav-link text-neutral-300 hover:text-neutral-100 transition-colors duration-300 relative">About</a>
+        <a href="#experience"
+          class="nav-link text-neutral-300 hover:text-neutral-100 transition-colors duration-300 relative">Experience</a>
+        <a href="#projects"
+          class="nav-link text-neutral-300 hover:text-neutral-100 transition-colors duration-300 relative">Projects</a>
+        <a href="#skills"
+          class="nav-link text-neutral-300 hover:text-neutral-100 transition-colors duration-300 relative">Skills</a>
+        <a href="#contact"
+          class="nav-link text-neutral-300 hover:text-neutral-100 transition-colors duration-300 relative">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden flex flex-col space-y-1.5 w-6 h-6">
+        <span class="w-full h-0.5 bg-white transition-all duration-300 transform origin-center"></span>
+        <span class="w-full h-0.5 bg-white transition-all duration-300"></span>
+        <span class="w-full h-0.5 bg-white transition-all duration-300 transform origin-center"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="md:hidden absolute top-full left-0 right-0 mt-2 glass rounded-2xl p-6 opacity-0 invisible transition-all duration-300 transform translate-y-4">
+      <div class="flex flex-col space-y-4">
+        <a href="#home" class="text-white/80 hover:text-white transition-colors duration-300">Home</a>
+        <a href="#about" class="text-white/80 hover:text-white transition-colors duration-300">About</a>
+        <a href="#experience" class="text-white/80 hover:text-white transition-colors duration-300">Experience</a>
+        <a href="#projects" class="text-white/80 hover:text-white transition-colors duration-300">Projects</a>
+        <a href="#skills" class="text-white/80 hover:text-white transition-colors duration-300">Skills</a>
+        <a href="#contact" class="text-white/80 hover:text-white transition-colors duration-300">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto text-center space-y-8 animate-fade-in-up">
+      <!-- Avatar -->
+      <div class="relative mx-auto w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64">
+        <div class="absolute inset-0 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 animate-float"></div>
+        <div class="absolute inset-2 rounded-full overflow-hidden glass">
+          <img src="https://www.gravatar.com/avatar/6081a95fe5ac5d6a8467ca1b3401baa7?size=300"
+            alt="Mena Maged - Creative Developer" class="w-full h-full object-cover" loading="eager">
+        </div>
+        <div class="absolute -inset-4 rounded-full border-2 border-primary-500/30 animate-spin"
+          style="animation-duration: 20s;"></div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="space-y-6">
+        <div class="space-y-2">
+          <p class="text-xl sm:text-2xl text-white/80 font-manrope">Hi, I'm</p>
+          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold text-gradient animate-glow font-manrope">
+            Mena Maged
+          </h1>
+        </div>
+
+        <p class="text-xl sm:text-2xl lg:text-3xl text-white/90 font-manrope font-medium">
+          Creative Developer & Digital Innovator
+        </p>
+
+        <p class="text-lg sm:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
+          Crafting exceptional digital experiences across music, gaming, apps, and web platforms
+        </p>
+      </div>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto">
+        <div class="text-center p-4 glass rounded-xl">
+          <div class="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-400 font-mono stat-number"
+            data-target="12">0</div>
+          <div class="text-sm sm:text-base text-white/70 font-medium">Projects</div>
+        </div>
+        <div class="text-center p-4 glass rounded-xl">
+          <div class="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-400 font-mono stat-number"
+            data-target="5">0</div>
+          <div class="text-sm sm:text-base text-white/70 font-medium">Years Experience</div>
+        </div>
+        <div class="text-center p-4 glass rounded-xl">
+          <div class="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-400 font-mono stat-number"
+            data-target="100">0</div>
+          <div class="text-sm sm:text-base text-white/70 font-medium">Satisfied Clients</div>
+        </div>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="#projects"
+          class="group relative px-8 py-4 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+          <span class="relative z-10">Explore My Work</span>
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-primary-600 to-accent-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          </div>
+        </a>
+        <a href="#contact"
+          class="px-8 py-4 glass rounded-full font-medium transition-all duration-300 hover:scale-105 hover:bg-white/20">
+          Let's Talk
+        </a>
+      </div>
+
+      <!-- Social Links -->
+      <div class="flex justify-center space-x-6">
+        <a href="mailto:menaxmaged@gmail.com" aria-label="Email Mena Maged"
+          class="group p-3 glass rounded-full transition-all duration-300 hover:scale-110 hover:bg-white/20">
+          <svg class="w-6 h-6 group-hover:text-primary-400 transition-colors duration-300" fill="currentColor"
+            viewBox="0 0 24 24">
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+        </a>
+        <a href="https://github.com/menaxmaged" aria-label="GitHub Profile"
+          class="group p-3 glass rounded-full transition-all duration-300 hover:scale-110 hover:bg-white/20"
+          target="_blank" rel="noopener noreferrer">
+          <svg class="w-6 h-6 group-hover:text-primary-400 transition-colors duration-300" fill="currentColor"
+            viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/mena-maged" aria-label="LinkedIn Profile"
+          class="group p-3 glass rounded-full transition-all duration-300 hover:scale-110 hover:bg-white/20"
+          target="_blank" rel="noopener noreferrer">
+          <svg class="w-6 h-6 group-hover:text-primary-400 transition-colors duration-300" fill="currentColor"
+            viewBox="0 0 24 24">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center animate-bounce-slow">
+      <div class="text-white/60 text-sm font-medium mb-2">Scroll Down</div>
+      <div class="text-2xl text-white/60">↓</div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 fade-in">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-16 text-gradient font-manrope">About Me</h2>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Text Content -->
+        <div class="space-y-6">
+          <p class="text-lg text-white/80 leading-relaxed">
+            I am a passionate and driven creative developer with a strong background in innovative tech projects. My
+            journey spans across multiple domains, from music production to gaming platforms, mobile applications to
+            cutting-edge web solutions.
+          </p>
+          <p class="text-lg text-white/80 leading-relaxed">
+            I believe in pushing boundaries and creating digital experiences that not only function flawlessly but also
+            inspire and engage users on a deeper level. My approach combines technical expertise with creative vision to
+            deliver solutions that make a real impact.
+          </p>
+          <p class="text-lg text-white/80 leading-relaxed">
+            When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or
+            mentoring aspiring developers in my community.
+          </p>
+
+          <div class="flex flex-wrap gap-3 mt-8">
+            <span class="px-4 py-2 glass rounded-full text-sm font-medium text-primary-300">Web Development</span>
+            <span class="px-4 py-2 glass rounded-full text-sm font-medium text-primary-300">Mobile Apps</span>
+            <span class="px-4 py-2 glass rounded-full text-sm font-medium text-primary-300">Gaming</span>
+            <span class="px-4 py-2 glass rounded-full text-sm font-medium text-primary-300">IT Solutions</span>
+            <span class="px-4 py-2 glass rounded-full text-sm font-medium text-primary-300">UI/UX Design</span>
+          </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="space-y-6">
+          <div class="p-6 glass rounded-2xl group hover:bg-white/10 transition-all duration-300">
+            <div class="flex items-start space-x-4">
+              <div class="text-4xl">🏆</div>
+              <div>
+                <h4 class="text-xl font-semibold text-white mb-2 font-manrope">Award Winner</h4>
+                <p class="text-white/70">Best Innovation in Tech 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 glass rounded-2xl group hover:bg-white/10 transition-all duration-300">
+            <div class="flex items-start space-x-4">
+              <div class="text-4xl">🚀</div>
+              <div>
+                <h4 class="text-xl font-semibold text-white mb-2 font-manrope">Startup Founder</h4>
+                <p class="text-white/70">Successfully launched 3 tech startups</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 glass rounded-2xl group hover:bg-white/10 transition-all duration-300">
+            <div class="flex items-start space-x-4">
+              <div class="text-4xl">👥</div>
+              <div>
+                <h4 class="text-xl font-semibold text-white mb-2 font-manrope">Team Leader</h4>
+                <p class="text-white/70">Led teams of 10+ developers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 fade-in">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-16 text-gradient font-manrope">Experience
+      </h2>
+
+      <div class="relative">
+        <!-- Timeline Line -->
+        <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-accent-500"></div>
+
+        <div class="space-y-12">
+          <!-- Timeline Item 1 -->
+          <div class="relative flex items-start space-x-8">
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
+              <div class="w-8 h-8 bg-white rounded-full"></div>
+            </div>
+            <div class="flex-1 p-6 glass rounded-2xl hover:bg-white/10 transition-all duration-300">
+              <h3 class="text-2xl font-bold text-white mb-2 font-manrope">Senior Full-Stack Developer</h3>
+              <h4 class="text-xl text-primary-400 mb-2 font-medium">MNZ Technology</h4>
+              <span
+                class="inline-block px-3 py-1 bg-primary-500/20 text-primary-300 rounded-full text-sm font-medium mb-4">2022
+                - Present</span>
+              <p class="text-white/80 mb-4 leading-relaxed">
+                Leading development of enterprise web applications and mobile solutions. Architected scalable systems
+                serving 100K+ users daily.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-accent-500/20 text-accent-300 rounded-full text-sm">React</span>
+                <span class="px-3 py-1 bg-accent-500/20 text-accent-300 rounded-full text-sm">Node.js</span>
+                <span class="px-3 py-1 bg-accent-500/20 text-accent-300 rounded-full text-sm">TypeScript</span>
+                <span class="px-3 py-1 bg-accent-500/20 text-accent-300 rounded-full text-sm">AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="relative flex items-start space-x-8">
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
+              <div class="w-8 h-8 bg-white rounded-full"></div>
+            </div>
+            <div class="flex-1 p-6 glass rounded-2xl hover:bg-white/10 transition-all duration-300">
+              <h3 class="text-2xl font-bold text-white mb-2 font-manrope">Creative Developer</h3>
+              <h4 class="text-xl text-primary-400 mb-2 font-medium">Beatroot Records</h4>
+              <span
+                class="inline-block px-3 py-1 bg-primary-500/20 text-primary-300 rounded-full text-sm font-medium mb-4">2021
+                - 2022</span>
+              <p class="text-white/80 mb-4 leading-relaxed">
+                Developed interactive music platforms and artist management systems. Created immersive web experiences
+                for music industry clients.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-accent-500/20 text-accent-300 rounded-full text-sm">Vue.js</span>
+                <span class="px-3 py-1 bg-accent-500/20 text-accent-300 rounded-full text-sm">PHP</span>
+                <span class="px-3 py-1 bg-accent-500/20 text-accent-300 rounded-full text-sm">MySQL</span>
+                <span class="px-3 py-1 bg-accent-500/20 text-accent-300 rounded-full text-sm">WebGL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="relative flex items-start space-x-8">
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
+              <div class="w-8 h-8 bg-white rounded-full"></div>
+            </div>
+            <div class="flex-1 p-6 glass rounded-2xl hover:bg-white/10 transition-all duration-300">
+              <h3 class="text-2xl font-bold text-white mb-2 font-manrope">Mobile App Developer</h3>
+              <h4 class="text-xl text-primary-400 mb-2 font-medium">Freelance</h4>
+              <span
+                class="inline-block px-3 py-1 bg-primary-500/20 text-primary-300 rounded-full text-sm font-medium mb-4">2020
+                - 2021</span>
+              <p class="text-white/80 mb-4 leading-relaxed">
+                Built iOS and Android applications for various clients. Specialized in cross-platform development and
+                UI/UX optimization.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-accent-500/20 text-accent-300 rounded-full text-sm">React Native</span>
+                <span class="px-3 py-1 bg-accent-500/20 text-accent-300 rounded-full text-sm">Flutter</span>
+                <span class="px-3 py-1 bg-accent-500/20 text-accent-300 rounded-full text-sm">Swift</span>
+                <span class="px-3 py-1 bg-accent-500/20 text-accent-300 rounded-full text-sm">Kotlin</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 fade-in">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-16 text-gradient font-manrope">Featured
+        Projects</h2>
+
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <button
+          class="px-6 py-3 glass rounded-full font-medium transition-all duration-300 hover:bg-white/20 filter-btn active"
+          data-filter="all">
+          All Projects
+        </button>
+        <button
+          class="px-6 py-3 glass rounded-full font-medium transition-all duration-300 hover:bg-white/20 filter-btn"
+          data-filter="web">
+          Web Apps
+        </button>
+        <button
+          class="px-6 py-3 glass rounded-full font-medium transition-all duration-300 hover:bg-white/20 filter-btn"
+          data-filter="mobile">
+          Mobile Apps
+        </button>
+        <button
+          class="px-6 py-3 glass rounded-full font-medium transition-all duration-300 hover:bg-white/20 filter-btn"
+          data-filter="gaming">
+          Gaming
+        </button>
+        <button
+          class="px-6 py-3 glass rounded-full font-medium transition-all duration-300 hover:bg-white/20 filter-btn"
+          data-filter="business">
+          Business
+        </button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+        <!-- Projects will be dynamically loaded here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 fade-in">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-16 text-gradient font-manrope">Skills &
+        Technologies</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Frontend Development -->
+        <div class="p-6 glass rounded-2xl hover:bg-white/10 transition-all duration-300">
+          <h3 class="text-2xl font-bold text-white mb-6 font-manrope">Frontend Development</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">React</span>
+                <span class="text-primary-400 text-sm font-mono">95%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="95" style="width: 0%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">Vue.js</span>
+                <span class="text-primary-400 text-sm font-mono">90%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="90" style="width: 0%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">TypeScript</span>
+                <span class="text-primary-400 text-sm font-mono">88%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="88" style="width: 0%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">Next.js</span>
+                <span class="text-primary-400 text-sm font-mono">85%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="85" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Development -->
+        <div class="p-6 glass rounded-2xl hover:bg-white/10 transition-all duration-300">
+          <h3 class="text-2xl font-bold text-white mb-6 font-manrope">Backend Development</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">Node.js</span>
+                <span class="text-primary-400 text-sm font-mono">92%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="92" style="width: 0%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">PHP</span>
+                <span class="text-primary-400 text-sm font-mono">88%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="88" style="width: 0%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">Python</span>
+                <span class="text-primary-400 text-sm font-mono">80%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="80" style="width: 0%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">MongoDB</span>
+                <span class="text-primary-400 text-sm font-mono">85%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="85" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Development -->
+        <div class="p-6 glass rounded-2xl hover:bg-white/10 transition-all duration-300">
+          <h3 class="text-2xl font-bold text-white mb-6 font-manrope">Mobile Development</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">React Native</span>
+                <span class="text-primary-400 text-sm font-mono">90%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="90" style="width: 0%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">Flutter</span>
+                <span class="text-primary-400 text-sm font-mono">75%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="75" style="width: 0%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">Swift</span>
+                <span class="text-primary-400 text-sm font-mono">70%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="70" style="width: 0%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">Kotlin</span>
+                <span class="text-primary-400 text-sm font-mono">68%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="68" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Others -->
+        <div class="p-6 glass rounded-2xl hover:bg-white/10 transition-all duration-300">
+          <h3 class="text-2xl font-bold text-white mb-6 font-manrope">Tools & Others</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">Git</span>
+                <span class="text-primary-400 text-sm font-mono">95%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="95" style="width: 0%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">Docker</span>
+                <span class="text-primary-400 text-sm font-mono">82%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="82" style="width: 0%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">AWS</span>
+                <span class="text-primary-400 text-sm font-mono">78%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="78" style="width: 0%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white/90 font-medium">Figma</span>
+                <span class="text-primary-400 text-sm font-mono">85%</span>
+              </div>
+              <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full skill-progress"
+                  data-progress="85" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 fade-in">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-16 text-gradient font-manrope">Let's Connect
+      </h2>
+
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Contact Info -->
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-3xl font-bold text-white mb-4 font-manrope">Get In Touch</h3>
+            <p class="text-lg text-white/80 leading-relaxed">
+              I'm always excited to discuss new opportunities, creative projects, or just have a friendly conversation
+              about technology and innovation. Let's build something amazing together!
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4 p-4 glass rounded-xl hover:bg-white/10 transition-all duration-300">
+              <div class="text-2xl">✉️</div>
+              <div>
+                <strong class="text-white font-semibold">Email</strong><br>
+                <a href="mailto:menaxmaged@gmail.com"
+                  class="text-accent-400 hover:text-accent-300 transition-colors duration-300">menaxmaged@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4 p-4 glass rounded-xl hover:bg-white/10 transition-all duration-300">
+              <div class="text-2xl">🌍</div>
+              <div>
+                <strong class="text-white font-semibold">Location</strong><br>
+                <span class="text-white/70">Cairo, Egypt</span>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4 p-4 glass rounded-xl hover:bg-white/10 transition-all duration-300">
+              <div class="text-2xl">💼</div>
+              <div>
+                <strong class="text-white font-semibold">Status</strong><br>
+                <span class="flex items-center text-white/70">
+                  <span class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
+                  Available for Projects
+                </span>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4 p-4 glass rounded-xl hover:bg-white/10 transition-all duration-300">
+              <div class="text-2xl">⏰</div>
+              <div>
+                <strong class="text-white font-semibold">Response Time</strong><br>
+                <span class="text-white/70">Usually within 24 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="space-y-6" id="contact-form">
+          <div>
+            <label for="name" class="block text-white font-medium mb-2">Your Name *</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required aria-required="true"
+              class="w-full px-4 py-3 glass rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300">
+          </div>
+
+          <div>
+            <label for="email" class="block text-white font-medium mb-2">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required aria-required="true"
+              class="w-full px-4 py-3 glass rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300">
+          </div>
+
+          <div>
+            <label for="company" class="block text-white font-medium mb-2">Company/Organization</label>
+            <input type="text" id="company" name="company" placeholder="Your Company"
+              class="w-full px-4 py-3 glass rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300">
+          </div>
+
+          <div>
+            <label for="project-type" class="block text-white font-medium mb-2">Project Type</label>
+            <select id="project-type" name="project-type"
+              class="w-full px-4 py-3 glass rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300">
+              <option value="">Select project type</option>
+              <option value="web-development">Web Development</option>
+              <option value="mobile-app">Mobile App</option>
+              <option value="consulting">Consulting</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="budget" class="block text-white font-medium mb-2">Budget Range</label>
+            <select id="budget" name="budget"
+              class="w-full px-4 py-3 glass rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300">
+              <option value="">Select budget range</option>
+              <option value="under-5k">Under $5,000</option>
+              <option value="5k-15k">$5,000 - $15,000</option>
+              <option value="15k-50k">$15,000 - $50,000</option>
+              <option value="50k-plus">$50,000+</option>
+              <option value="discuss">Let's discuss</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" class="block text-white font-medium mb-2">Message *</label>
+            <textarea id="message" name="message" rows="5"
+              placeholder="Tell me about your project, goals, and how I can help you achieve them..." required
+              aria-required="true"
+              class="w-full px-4 py-3 glass rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300 resize-none"></textarea>
+          </div>
+
+          <button type="submit"
+            class="group w-full px-8 py-4 bg-gradient-to-r from-primary-500 to-accent-500 rounded-xl font-medium text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl flex items-center justify-center space-x-2">
+            <span>Send Message</span>
+            <span class="group-hover:translate-x-1 transition-transform duration-300">→</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 px-4 sm:px-6 lg:px-8 border-t border-white/10">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- Brand Section -->
+        <div class="space-y-4">
+          <h4 class="text-2xl font-bold text-white font-manrope">Mena Maged</h4>
+          <p class="text-white/70">Creative Developer & Digital Innovator</p>
+          <div class="flex space-x-4">
+            <a href="mailto:menaxmaged@gmail.com" aria-label="Email"
+              class="text-2xl hover:text-primary-400 transition-colors duration-300">✉️</a>
+            <a href="https://github.com/menaxmaged" aria-label="GitHub" target="_blank" rel="noopener noreferrer"
+              class="text-2xl hover:text-primary-400 transition-colors duration-300">💻</a>
+            <a href="https://linkedin.com/in/mena-maged" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"
+              class="text-2xl hover:text-primary-400 transition-colors duration-300">💼</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-4">
+          <h4 class="text-xl font-semibold text-white font-manrope">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#about" class="text-white/70 hover:text-primary-400 transition-colors duration-300">About</a>
+            </li>
+            <li><a href="#experience"
+                class="text-white/70 hover:text-primary-400 transition-colors duration-300">Experience</a></li>
+            <li><a href="#projects"
+                class="text-white/70 hover:text-primary-400 transition-colors duration-300">Projects</a></li>
+            <li><a href="#skills" class="text-white/70 hover:text-primary-400 transition-colors duration-300">Skills</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="space-y-4">
+          <h4 class="text-xl font-semibold text-white font-manrope">Services</h4>
+          <ul class="space-y-2 text-white/70">
+            <li>Web Development</li>
+            <li>Mobile Apps</li>
+            <li>UI/UX Design</li>
+            <li>Consulting</li>
+          </ul>
+        </div>
+
+        <!-- Location -->
+        <div class="space-y-4">
+          <h4 class="text-xl font-semibold text-white font-manrope">Location</h4>
+          <div class="text-white/70 space-y-1">
+            <p>Cairo, Egypt</p>
+            <p>Available Worldwide</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="pt-8 border-t border-white/10">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <p class="text-white/60 text-center md:text-left">&copy; 2025 Mena Maged. All rights reserved.</p>
+          <p class="text-white/60 text-center md:text-right">Built with ❤️ and modern web technologies</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Enhanced Projects data with categories
+    const projects = [
+      { url: "https://beatrootrecords.com", name: "Beatroot Records", icon: "🎵", description: "Music label platform with artist management and distribution", category: "web" },
+      { url: "https://cineramafilm.me", name: "Cinerama Film", icon: "🎬", description: "Film production and entertainment content platform", category: "web" },
+      { url: "https://anubisgaming.com", name: "Anubis Gaming", icon: "🎮", description: "Gaming community and esports tournament platform", category: "gaming" },
+      { url: "https://talebapp.com", name: "Taleb App", icon: "📱", description: "Mobile application for digital storytelling", category: "mobile" },
+      { url: "https://amf.com.eg", name: "AMF", icon: "🏢", description: "Corporate business solutions and services", category: "business" },
+      { url: "https://mnztechnology.com", name: "MNZ Technology", icon: "💻", description: "Technology consulting and development services", category: "business" },
+      { url: "https://elmetr.com", name: "El Metr", icon: "🚇", description: "Urban transportation and mobility solutions", category: "web" },
+      { url: "https://3blesports.com", name: "3BLE Sports", icon: "⚽", description: "Sports management and athlete development platform", category: "web" },
+      { url: "https://kazumi.me", name: "Kazumi", icon: "🌸", description: "Personal brand and creative portfolio showcase", category: "web" },
+      { url: "https://apps.apple.com/eg/app/%D9%85%D9%86%D8%B5%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D9%88%D8%A9/id6642664863", name: "Manassat Al Marwa", icon: "📲", description: "iOS app for community and social networking", category: "mobile" },
+      { url: "https://apps.apple.com/eg/app/shehub/id6736874148", name: "SheHub", icon: "👩‍💼", description: "Women empowerment and networking mobile app", category: "mobile" },
+      { url: "https://zpreneurs.com", name: "Zpreneurs", icon: "🚀", description: "Entrepreneurship and startup acceleration platform", category: "business" }
+    ];
+
+    // Loading screen
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('loading-screen').style.opacity = '0';
+        setTimeout(() => {
+          document.getElementById('loading-screen').style.display = 'none';
+        }, 300);
+      }, 1500);
+    });
+
+    // Custom cursor
+    const cursor = document.getElementById('cursor');
+    const cursorDot = document.getElementById('cursor-dot');
+
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      cursorDot.style.left = e.clientX + 'px';
+      cursorDot.style.top = e.clientY + 'px';
+    });
+
+    // Add hover effects for cursor
+    const hoverElements = document.querySelectorAll('a, button, .project-card, .skill-item');
+    hoverElements.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.classList.add('cursor-hover');
+        cursorDot.classList.add('cursor-hover');
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.classList.remove('cursor-hover');
+        cursorDot.classList.remove('cursor-hover');
+      });
+    });
+
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const nav = document.querySelector('nav ul');
+
+    mobileMenuToggle.addEventListener('click', () => {
+      nav.classList.toggle('mobile-menu-open');
+      mobileMenuToggle.classList.toggle('active');
+    });
+
+    // Counter animation for hero stats
+    function animateCounters() {
+      const counters = document.querySelectorAll('.stat-number');
+      counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const increment = target / 50;
+        let current = 0;
+
+        const updateCounter = () => {
+          current += increment;
+          if (current < target) {
+            counter.textContent = Math.floor(current);
+            setTimeout(updateCounter, 40);
+          } else {
+            counter.textContent = target;
+          }
+        };
+
+        updateCounter();
+      });
+    }
+
+    // Skill bars animation
+    function animateSkillBars() {
+      const skillBars = document.querySelectorAll('.skill-progress');
+      skillBars.forEach((bar, index) => {
+        setTimeout(() => {
+          const progress = bar.getAttribute('data-progress');
+          bar.style.width = progress + '%';
+        }, index * 100);
+      });
+    }
+
+    // Load projects dynamically with filtering
+    function loadProjects(filter = 'all') {
+      const grid = document.getElementById("projects-grid");
+      grid.innerHTML = '';
+
+      const filteredProjects = filter === 'all' ? projects : projects.filter(p => p.category === filter);
+
+      filteredProjects.forEach((project, index) => {
+        const projectCard = document.createElement("div");
+        projectCard.className = "project-card";
+        projectCard.style.animationDelay = `${index * 0.1}s`;
+
+        projectCard.innerHTML = `
+          <div class="project-image">
+            <img class="project-icon" src="${project.url}/favicon.ico" alt="${project.name} Icon" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+            <div class="project-icon-fallback" style="display:none;">${project.icon}</div>
+          </div>
+          <div class="project-content">
+            <h3>${project.name}</h3>
+            <p>${project.description}</p>
+            <div class="project-category">${project.category}</div>
+            <a href="${project.url}" class="project-link" target="_blank" rel="noopener noreferrer">
+              Visit Project 
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                <path d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+              </svg>
+            </a>
+          </div>
+        `;
+
+        grid.appendChild(projectCard);
+      });
+    }
+
+    // Project filtering
+    document.addEventListener('DOMContentLoaded', () => {
+      loadProjects();
+
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          loadProjects(btn.getAttribute('data-filter'));
+        });
+      });
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          // Close mobile menu if open
+          nav.classList.remove('mobile-menu-open');
+          mobileMenuToggle.classList.remove('active');
+        }
+      });
+    });
+
+    // Enhanced Intersection Observer for animations
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+
+          // Trigger specific animations
+          if (entry.target.id === 'home') {
+            setTimeout(animateCounters, 500);
+          }
+          if (entry.target.id === 'skills') {
+            setTimeout(animateSkillBars, 500);
+          }
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in, #home').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Navigation scroll effect with active section highlighting
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 100) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+
+      // Highlight active section in navigation
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 200)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Scroll progress indicator
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset;
+      const docHeight = document.body.offsetHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+
+      document.getElementById('scroll-progress').style.width = scrollPercent + '%';
+    });
+
+    // Enhanced contact form handling
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const submitBtn = this.querySelector('.submit-btn');
+      const originalText = submitBtn.querySelector('.btn-text').textContent;
+
+      // Show loading state
+      submitBtn.querySelector('.btn-text').textContent = 'Sending...';
+      submitBtn.querySelector('.btn-icon').textContent = '⏳';
+      submitBtn.disabled = true;
+
+      // Get form data
+      const formData = new FormData(this);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const company = formData.get('company');
+      const projectType = formData.get('project-type');
+      const budget = formData.get('budget');
+      const message = formData.get('message');
+
+      // Create detailed mailto link
+      const subject = encodeURIComponent(`Portfolio Contact from ${name}${company ? ` (${company})` : ''}`);
+      const body = encodeURIComponent(`
+Name: ${name}
+Email: ${email}
+${company ? `Company: ${company}` : ''}
+${projectType ? `Project Type: ${projectType}` : ''}
+${budget ? `Budget Range: ${budget}` : ''}
+
+Message:
+${message}
+
+---
+Sent from Portfolio Contact Form
+      `.trim());
+
+      const mailtoLink = `mailto:menaxmaged@gmail.com?subject=${subject}&body=${body}`;
+
+      // Simulate processing time
+      setTimeout(() => {
+        // Open email client
+        window.location.href = mailtoLink;
+
+        // Reset form and button
+        this.reset();
+        submitBtn.querySelector('.btn-text').textContent = 'Message Sent!';
+        submitBtn.querySelector('.btn-icon').textContent = '✓';
+
+        setTimeout(() => {
+          submitBtn.querySelector('.btn-text').textContent = originalText;
+          submitBtn.querySelector('.btn-icon').textContent = '→';
+          submitBtn.disabled = false;
+        }, 3000);
+
+        // Show success notification
+        showNotification('Email client opened! Please send the email to complete your message.', 'success');
+      }, 1000);
+    });
+
+    // Notification system
+    function showNotification(message, type = 'info') {
+      const notification = document.createElement('div');
+      notification.className = `notification notification-${type}`;
+      notification.textContent = message;
+
+      document.body.appendChild(notification);
+
+      setTimeout(() => {
+        notification.classList.add('show');
+      }, 100);
+
+      setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => {
+          document.body.removeChild(notification);
+        }, 300);
+      }, 5000);
+    }
+
+    // Parallax effect for background
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const bg = document.querySelector('.bg-animation');
+      bg.style.transform = `translateY(${scrolled * 0.3}px)`;
+    });
+
+    // Keyboard navigation support
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        nav.classList.remove('mobile-menu-open');
+        mobileMenuToggle.classList.remove('active');
+      }
+    });
+
+    // Performance optimization - lazy load images
+    if ('IntersectionObserver' in window) {
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.classList.remove('lazy');
+            imageObserver.unobserve(img);
+          }
+        });
+      });
+
+      document.querySelectorAll('img[data-src]').forEach(img => {
+        imageObserver.observe(img);
+      });
+    }
+
+    // Add theme toggle functionality (future enhancement)
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (prefersDarkScheme.matches) {
+      document.body.classList.add('dark-theme');
+    }
+  </script>
+</body>
+
+</html>

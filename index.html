@@ -1,166 +1,479 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mena Maged | Portfolio</title>
+  <title>Mena Maged | Creative Developer & Digital Innovator</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Mena Maged - Creative Developer & Digital Innovator specializing in web development, mobile apps, gaming, and IT solutions. Based in Cairo, Egypt.">
+  <meta name="keywords"
+    content="Mena Maged, web developer, mobile app developer, creative developer, digital innovator, Cairo, Egypt, portfolio">
+  <meta name="author" content="Mena Maged">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Mena Maged | Creative Developer & Digital Innovator">
+  <meta property="og:description"
+    content="Crafting exceptional digital experiences across music, gaming, apps, and web platforms">
+  <meta property="og:image" content="https://www.gravatar.com/avatar/6081a95fe5ac5d6a8467ca1b3401baa7?size=1200">
+  <meta property="og:url" content="https://menaxmaged.github.io/Mena">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mena Maged | Creative Developer & Digital Innovator">
+  <meta name="twitter:description"
+    content="Crafting exceptional digital experiences across music, gaming, apps, and web platforms">
+  <meta name="twitter:image" content="https://www.gravatar.com/avatar/6081a95fe5ac5d6a8467ca1b3401baa7?size=1200">
+
+  <!-- Favicon -->
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🅼</text></svg>">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            'inter': ['Inter', 'sans-serif'],
+            'mono': ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            gray: {
+              50: '#f8fafc',
+              100: '#f1f5f9',
+              200: '#e2e8f0',
+              300: '#cbd5e1',
+              400: '#94a3b8',
+              500: '#64748b',
+              600: '#475569',
+              700: '#334155',
+              800: '#1e293b',
+              850: '#172033',
+              900: '#0f172a',
+              950: '#020617',
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.6s ease-out',
+            'slide-up': 'slideUp 0.6s ease-out',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Minimal Custom Styles -->
+  <style>
+    .glass {
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(148, 163, 184, 0.1);
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1e293b;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #475569;
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #64748b;
+    }
+  </style>
 </head>
 
-<body>
-  <div class="bg-animation"></div>
-
-  <!-- Scroll Progress -->
-  <div class="scroll-indicator">
-    <div class="scroll-progress" id="scroll-progress"></div>
-  </div>
-
+<body class="bg-gray-950 text-gray-100 font-inter">
   <!-- Navigation -->
-  <nav class="glass">
-    <ul>
-      <li><a href="#home" class="logo">MM</a></li>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="text-2xl font-bold text-white">
+        Mena<span class="text-blue-500">.</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="text-gray-300 hover:text-white transition-colors">Home</a>
+        <a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a>
+        <a href="#experience" class="text-gray-300 hover:text-white transition-colors">Experience</a>
+        <a href="#projects" class="text-gray-300 hover:text-white transition-colors">Projects</a>
+        <a href="#contact"
+          class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-colors">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-white" id="mobile-menu-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-gray-900 mx-6 mb-4 rounded-lg p-4" id="mobile-menu">
+      <div class="flex flex-col space-y-3">
+        <a href="#home" class="text-gray-300 hover:text-white transition-colors py-2">Home</a>
+        <a href="#about" class="text-gray-300 hover:text-white transition-colors py-2">About</a>
+        <a href="#experience" class="text-gray-300 hover:text-white transition-colors py-2">Experience</a>
+        <a href="#projects" class="text-gray-300 hover:text-white transition-colors py-2">Projects</a>
+        <a href="#contact"
+          class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-colors text-center">Contact</a>
+      </div>
+    </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <div class="hero-avatar">
-        <img src="https://www.gravatar.com/avatar/6081a95fe5ac5d6a8467ca1b3401baa7?size=200" alt="Mena's Avatar">
+  <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-20">
+    <div class="max-w-4xl mx-auto text-center animate-fade-in">
+      <!-- Avatar -->
+      <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-700 animate-float">
+        <img src="https://www.gravatar.com/avatar/6081a95fe5ac5d6a8467ca1b3401baa7?size=200" alt="Mena Maged"
+          class="w-full h-full object-cover">
       </div>
-      <h1>Hi, I'm Mena Maged</h1>
-      <p class="subtitle">Creative Developer & Digital Innovator</p>
-      <p class="tagline">Crafting exceptional digital experiences across music, gaming, apps, and web platforms</p>
-      <a href="#projects" class="cta-button">Explore My Work</a>
+
+      <!-- Main Content -->
+      <h1 class="text-5xl md:text-7xl font-bold mb-6">
+        <span class="text-gray-300">Hi, I'm</span><br>
+        <span class="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">Mena Maged</span>
+      </h1>
+
+      <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto">
+        Creative Developer & Digital Innovator crafting exceptional digital experiences
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <a href="#projects"
+          class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-colors font-medium">
+          View My Work
+        </a>
+        <a href="#contact"
+          class="px-8 py-3 border border-gray-600 text-gray-300 rounded-lg hover:border-gray-500 hover:text-white transition-colors font-medium">
+          Get In Touch
+        </a>
+      </div>
+
+      <!-- Social Links -->
+      <div class="flex justify-center space-x-6">
+        <a href="mailto:menaxmaged@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+        </a>
+        <a href="https://github.com/menaxmaged" target="_blank" rel="noopener noreferrer"
+          class="text-gray-400 hover:text-white transition-colors">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/mena-maged" target="_blank" rel="noopener noreferrer"
+          class="text-gray-400 hover:text-white transition-colors">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="fade-in">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-content">
-      <div class="about-text">
-        <p>I am a passionate and driven creative developer with a strong background in innovative tech projects. My
-          journey spans across multiple domains, from music production to gaming platforms, mobile applications to
-          cutting-edge web solutions.</p>
-        <p>I believe in pushing boundaries and creating digital experiences that not only function flawlessly but also
-          inspire and engage users on a deeper level.</p>
-        <div class="skills">
-          <span class="skill-tag">Web Development</span>
-          <span class="skill-tag">Mobile Apps</span>
-          <span class="skill-tag">Gaming</span>
-          <span class="skill-tag">IT solutions</span>
-          <span class="skill-tag">UI/UX Design</span>
+  <section id="about" class="py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+        <span class="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">About Me</span>
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <p class="text-lg text-gray-300 leading-relaxed">
+            I'm a passionate creative developer with expertise in building exceptional digital experiences.
+            My journey spans web development, mobile applications, gaming platforms, and innovative tech solutions.
+          </p>
+          <p class="text-lg text-gray-300 leading-relaxed">
+            I believe in creating solutions that not only function flawlessly but also inspire and engage users.
+            My approach combines technical expertise with creative vision to deliver impactful results.
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          <div class="p-6 glass rounded-xl">
+            <h3 class="text-xl font-semibold mb-4 text-emerald-400">Skills</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">React</span>
+              <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Node.js</span>
+              <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">TypeScript</span>
+              <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Python</span>
+              <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Mobile Apps</span>
+              <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">UI/UX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 px-6 bg-gray-900/50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+        <span class="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">Experience</span>
+      </h2>
+
+      <div class="space-y-8">
+        <div class="p-6 glass rounded-xl">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+            <div>
+              <h3 class="text-xl font-semibold text-white">Senior Full-Stack Developer</h3>
+              <p class="text-blue-400">MNZ Technology</p>
+            </div>
+            <span class="text-gray-400 text-sm">2022 - Present</span>
+          </div>
+          <p class="text-gray-300 mb-4">
+            Leading development of enterprise web applications and mobile solutions.
+            Architecting scalable systems serving 100K+ users daily.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs">React</span>
+            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs">Node.js</span>
+            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs">AWS</span>
+          </div>
+        </div>
+
+        <div class="p-6 glass rounded-xl">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+            <div>
+              <h3 class="text-xl font-semibold text-white">Creative Developer</h3>
+              <p class="text-blue-400">Beatroot Records</p>
+            </div>
+            <span class="text-gray-400 text-sm">2021 - 2022</span>
+          </div>
+          <p class="text-gray-300 mb-4">
+            Developed interactive music platforms and artist management systems.
+            Created immersive web experiences for music industry clients.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs">Vue.js</span>
+            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs">PHP</span>
+            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs">WebGL</span>
+          </div>
+        </div>
+
+        <div class="p-6 glass rounded-xl">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+            <div>
+              <h3 class="text-xl font-semibold text-white">Mobile App Developer</h3>
+              <p class="text-blue-400">Freelance</p>
+            </div>
+            <span class="text-gray-400 text-sm">2020 - 2021</span>
+          </div>
+          <p class="text-gray-300 mb-4">
+            Built iOS and Android applications for various clients.
+            Specialized in cross-platform development and UI/UX optimization.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs">React Native</span>
+            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs">Flutter</span>
+            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs">Swift</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="fade-in">
-    <h2 class="section-title">Featured Projects</h2>
-    <div class="projects-grid" id="projects-grid">
-      <!-- Projects will be dynamically loaded here -->
+  <section id="projects" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+        <span class="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">Featured
+          Projects</span>
+      </h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+        <!-- Projects will be loaded here by JavaScript -->
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="fade-in">
-    <h2 class="section-title">Let's Connect</h2>
-    <div class="contact-container">
-      <div class="contact-info">
-        <h3>Get In Touch</h3>
-        <p>I'm always excited to discuss new opportunities, creative projects, or just have a friendly conversation
-          about technology and innovation.</p>
-        <div class="contact-item">
-          <div class="icon">✉️</div>
+  <section id="contact" class="py-20 px-6 bg-gray-900/50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+        <span class="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">Let's Connect</span>
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Contact Info -->
+        <div class="space-y-6">
           <div>
-            <strong>Email</strong><br>
-            <a href="mailto:menaxmaged@gmail.com"
-              style="color: var(--accent); text-decoration: none;">menaxmaged@gmail.com</a>
+            <h3 class="text-2xl font-semibold mb-4 text-white">Get In Touch</h3>
+            <p class="text-gray-300 mb-8">
+              I'm always excited to discuss new opportunities and creative projects.
+              Let's build something amazing together!
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+              </div>
+              <div>
+                <p class="font-medium text-white">Email</p>
+                <a href="mailto:menaxmaged@gmail.com" class="text-blue-400 hover:text-blue-300">menaxmaged@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                </svg>
+              </div>
+              <div>
+                <p class="font-medium text-white">Location</p>
+                <p class="text-gray-300">Cairo, Egypt</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="contact-item">
-          <div class="icon">🌍</div>
+
+        <!-- Contact Form -->
+        <form class="space-y-6" id="contact-form">
           <div>
-            <strong>Location</strong><br>
-            Cairo, Egypt
+            <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+            <input type="text" id="name" name="name" required
+              class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+              placeholder="Your name">
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+              placeholder="your@email.com">
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+            <textarea id="message" name="message" rows="5" required
+              class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 resize-none"
+              placeholder="Tell me about your project..."></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-colors font-medium">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Mena<span class="text-blue-500">.</span></h3>
+          <p class="text-gray-400">Creative Developer & Digital Innovator</p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4 text-white">Quick Links</h4>
+          <div class="space-y-2">
+            <a href="#about" class="block text-gray-400 hover:text-white transition-colors">About</a>
+            <a href="#experience" class="block text-gray-400 hover:text-white transition-colors">Experience</a>
+            <a href="#projects" class="block text-gray-400 hover:text-white transition-colors">Projects</a>
+            <a href="#contact" class="block text-gray-400 hover:text-white transition-colors">Contact</a>
           </div>
         </div>
-        <div class="contact-item">
-          <div class="icon">💼</div>
-          <div>
-            <strong>Status</strong><br>
-            Open for Projects
+
+        <div>
+          <h4 class="font-semibold mb-4 text-white">Connect</h4>
+          <div class="flex space-x-4">
+            <a href="mailto:menaxmaged@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+              </svg>
+            </a>
+            <a href="https://github.com/menaxmaged" target="_blank" rel="noopener noreferrer"
+              class="text-gray-400 hover:text-white transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/mena-maged" target="_blank" rel="noopener noreferrer"
+              class="text-gray-400 hover:text-white transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
 
-      <form class="contact-form" id="contact-form">
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="John Doe" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="john@example.com" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
-            required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p class="text-gray-400">&copy; 2025 Mena Maged. All rights reserved.</p>
+      </div>
     </div>
-  </section>
+  </footer>
 
+  <!-- JavaScript -->
   <script>
-    // Projects data
-    const projects = [
-      { url: "https://beatrootrecords.com", name: "Beatroot Records", icon: "🎵", description: "Music label platform with artist management and distribution" },
-      { url: "https://cineramafilm.me", name: "Cinerama Film", icon: "🎬", description: "Film production and entertainment content platform" },
-      { url: "https://anubisgaming.com", name: "Anubis Gaming", icon: "🎮", description: "Gaming community and esports tournament platform" },
-      { url: "https://talebapp.com", name: "Taleb App", icon: "📱", description: "Mobile application for digital storytelling" },
-      { url: "https://amf.com.eg", name: "AMF", icon: "🏢", description: "Corporate business solutions and services" },
-      { url: "https://mnztechnology.com", name: "MNZ Technology", icon: "💻", description: "Technology consulting and development services" },
-      { url: "https://elmetr.com", name: "El Metr", icon: "🚇", description: "Urban transportation and mobility solutions" },
-      { url: "https://3blesports.com", name: "3BLE Sports", icon: "⚽", description: "Sports management and athlete development platform" },
-      { url: "https://kazumi.me", name: "Kazumi", icon: "🌸", description: "Personal brand and creative portfolio showcase" },
-      { url: "https://apps.apple.com/eg/app/%D9%85%D9%86%D8%B5%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D9%88%D8%A9/id6642664863", name: "Manassat Al Marwa", icon: "📲", description: "iOS app for community and social networking" },
-      { url: "https://apps.apple.com/eg/app/shehub/id6736874148", name: "SheHub", icon: "👩‍💼", description: "Women empowerment and networking mobile app" },
-      { url: "https://zpreneurs.com", name: "Zpreneurs", icon: "🚀", description: "Entrepreneurship and startup acceleration platform" }
-    ];
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-    // Load projects dynamically
-    document.addEventListener("DOMContentLoaded", () => {
-      const grid = document.getElementById("projects-grid");
-
-      projects.forEach((project, index) => {
-        const projectCard = document.createElement("div");
-        projectCard.className = "project-card";
-        projectCard.style.animationDelay = `${index * 0.1}s`;
-
-        projectCard.innerHTML = `
-          <img class="project-icon" src="${project.url}/favicon.ico" alt="${project.name} Icon"/>
-          <h3>${project.name}</h3>
-          <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 15px;">${project.description}</p>
-          <a href="${project.url}" class="project-link" target="_blank">Visit Project →</a>
-        `;
-
-        grid.appendChild(projectCard);
-      });
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
     });
 
-    // Smooth scrolling for navigation links
+    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -171,46 +484,88 @@
             block: 'start'
           });
         }
+        // Close mobile menu if open
+        mobileMenu.classList.add('hidden');
       });
     });
 
-    // Intersection Observer for fade-in animations
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.fade-in').forEach(el => {
-      observer.observe(el);
-    });
-
-    // Navigation scroll effect
-    window.addEventListener('scroll', () => {
-      const nav = document.querySelector('nav');
-      if (window.scrollY > 100) {
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
+    // Projects data and rendering
+    const projects = [
+      {
+        url: "https://beatrootrecords.com",
+        name: "Beatroot Records",
+        icon: "🎵",
+        favicon: "https://www.google.com/s2/favicons?domain=beatrootrecords.com&sz=64",
+        description: "Music label platform with artist management and distribution",
+        category: "web"
+      },
+      {
+        url: "https://cineramafilm.me",
+        name: "Cinerama Film",
+        icon: "🎬",
+        favicon: "https://www.google.com/s2/favicons?domain=cineramafilm.me&sz=64",
+        description: "Film production and entertainment content platform",
+        category: "web"
+      },
+      {
+        url: "https://anubisgaming.com",
+        name: "Anubis Gaming",
+        icon: "🎮",
+        favicon: "https://www.google.com/s2/favicons?domain=anubisgaming.com&sz=64",
+        description: "Gaming community and esports tournament platform",
+        category: "gaming"
+      },
+      {
+        url: "https://talebapp.com",
+        name: "Taleb App",
+        icon: "📱",
+        favicon: "https://www.google.com/s2/favicons?domain=talebapp.com&sz=64",
+        description: "Mobile application for digital storytelling",
+        category: "mobile"
+      },
+      {
+        url: "https://amf.com.eg",
+        name: "AMF",
+        icon: "🏢",
+        favicon: "https://www.google.com/s2/favicons?domain=amf.com.eg&sz=64",
+        description: "Corporate business solutions and services",
+        category: "business"
+      },
+      {
+        url: "https://mnztechnology.com",
+        name: "MNZ Technology",
+        icon: "💻",
+        favicon: "https://www.google.com/s2/favicons?domain=mnztechnology.com&sz=64",
+        description: "Technology consulting and development services",
+        category: "business"
       }
-    });
+    ];
 
-    // Scroll progress indicator
-    window.addEventListener('scroll', () => {
-      const scrollTop = window.pageYOffset;
-      const docHeight = document.body.offsetHeight - window.innerHeight;
-      const scrollPercent = (scrollTop / docHeight) * 100;
-
-      document.getElementById('scroll-progress').style.width = scrollPercent + '%';
-    });
+    // Render projects
+    function renderProjects() {
+      const projectsGrid = document.getElementById('projects-grid');
+      projectsGrid.innerHTML = projects.map(project => `
+        <div class="p-6 glass rounded-xl hover:bg-gray-800/50 transition-all duration-300 group">
+          <div class="mb-4">
+            <img src="${project.favicon}" 
+                 alt="${project.name} favicon" 
+                 class="w-12 h-12 rounded-lg"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                 onload="this.nextElementSibling.style.display='none';">
+            <div class="text-4xl" style="display: none;">${project.icon}</div>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors">${project.name}</h3>
+          <p class="text-gray-300 mb-4 text-sm leading-relaxed">${project.description}</p>
+          <a href="${project.url}" target="_blank" rel="noopener noreferrer" 
+             class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium">
+            Visit Project
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+      `).join('');
+    }
 
     // Contact form handling
     document.getElementById('contact-form').addEventListener('submit', function (e) {
@@ -233,15 +588,32 @@
       // Reset form
       this.reset();
 
-      // Show success message (you could replace this with a proper notification)
-      alert('Email client opened! Please send the email to complete your message.');
+      // Show success message (optional)
+      alert('Email client opened! Thank you for your message.');
     });
 
-    // Add parallax effect to background
-    window.addEventListener('scroll', () => {
-      const scrolled = window.pageYOffset;
-      const bg = document.querySelector('.bg-animation');
-      bg.style.transform = `translateY(${scrolled * 0.5}px)`;
+    // Initialize
+    document.addEventListener('DOMContentLoaded', function () {
+      renderProjects();
+    });
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-slide-up');
+        }
+      });
+    }, observerOptions);
+
+    // Observe sections for animations
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
     });
   </script>
 </body>

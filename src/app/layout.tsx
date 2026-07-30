@@ -1,0 +1,64 @@
+import type { Metadata } from "next";
+import { Inter, JetBrains_Mono } from "next/font/google";
+import "./globals.css";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
+
+export const metadata: Metadata = {
+  title: "Mena Maged | Full-Stack Software Engineer",
+  description:
+    "Mena Maged - Full-Stack Software Engineer and Co-Founder/CTO at CodeX Technologies, specializing in Next.js, Node.js, and end-to-end web application development. Based in Giza, Egypt.",
+  keywords: [
+    "Mena Maged",
+    "software engineer",
+    "full-stack developer",
+    "Next.js developer",
+    "CodeX Technologies",
+    "co-founder",
+    "CTO",
+    "Egypt",
+    "portfolio",
+  ],
+  authors: [{ name: "Mena Maged" }],
+  openGraph: {
+    title: "Mena Maged | Full-Stack Software Engineer",
+    description:
+      "Full-Stack Software Engineer and Co-Founder/CTO at CodeX Technologies, building web applications end-to-end since 2018.",
+    url: "https://menaxmaged.me",
+    type: "website",
+    images: ["https://www.gravatar.com/avatar/6081a95fe5ac5d6a8467ca1b3401baa7?size=1200"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mena Maged | Full-Stack Software Engineer",
+    description:
+      "Full-Stack Software Engineer and Co-Founder/CTO at CodeX Technologies, building web applications end-to-end since 2018.",
+    images: ["https://www.gravatar.com/avatar/6081a95fe5ac5d6a8467ca1b3401baa7?size=1200"],
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className="scroll-smooth">
+      <body
+        className={`${inter.variable} ${jetbrainsMono.variable} font-[family-name:var(--font-inter)] bg-gray-950 text-gray-100 antialiased`}
+      >
+        {children}
+      </body>
+    </html>
+  );
+}

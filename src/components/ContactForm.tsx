@@ -1,7 +1,11 @@
 "use client";
 
 import { FormEvent } from "react";
+import { motion } from "motion/react";
 import { profile } from "@/lib/data";
+
+const fieldClass =
+  "w-full px-4 py-3 bg-bg-elevated border border-border rounded-xl text-text placeholder-text-tertiary focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors";
 
 export default function ContactForm() {
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -18,23 +22,16 @@ export default function ContactForm() {
   }
 
   return (
-    <form className="space-y-6" onSubmit={handleSubmit}>
+    <form className="space-y-5" onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+        <label htmlFor="name" className="block text-[13px] font-medium text-text-secondary mb-2">
           Name
         </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          required
-          className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-          placeholder="Your name"
-        />
+        <input type="text" id="name" name="name" required className={fieldClass} placeholder="Your name" />
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+        <label htmlFor="email" className="block text-[13px] font-medium text-text-secondary mb-2">
           Email
         </label>
         <input
@@ -42,13 +39,13 @@ export default function ContactForm() {
           id="email"
           name="email"
           required
-          className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className={fieldClass}
           placeholder="your@email.com"
         />
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+        <label htmlFor="message" className="block text-[13px] font-medium text-text-secondary mb-2">
           Message
         </label>
         <textarea
@@ -56,17 +53,19 @@ export default function ContactForm() {
           name="message"
           rows={5}
           required
-          className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 resize-none"
+          className={`${fieldClass} resize-none`}
           placeholder="Tell me about your project..."
         />
       </div>
 
-      <button
+      <motion.button
         type="submit"
-        className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-colors font-medium"
+        className="w-full px-6 py-3 bg-accent text-white rounded-full font-medium"
+        whileHover={{ scale: 1.02, backgroundColor: "var(--accent-hover)" }}
+        whileTap={{ scale: 0.98 }}
       >
         Send Message
-      </button>
+      </motion.button>
     </form>
   );
 }

@@ -1,77 +1,97 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "motion/react";
 import { profile } from "@/lib/data";
 import { MailIcon, GitHubIcon, LinkedInIcon, GlobeIcon } from "./icons";
 
 export default function Hero() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20">
-      <div className="max-w-4xl mx-auto text-center animate-fade-in">
-        <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-700 animate-float">
+    <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-14">
+      <div className="max-w-3xl mx-auto text-center">
+        <motion.div
+          className="w-28 h-28 mx-auto mb-8 rounded-full overflow-hidden ring-1 ring-border"
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ type: "spring", stiffness: 200, damping: 20 }}
+        >
           <Image
             src={profile.avatar}
             alt={profile.name}
             width={200}
             height={200}
             className="w-full h-full object-cover"
+            priority
           />
-        </div>
+        </motion.div>
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-6">
-          <span className="text-gray-300">Hi, I&apos;m</span>
-          <br />
-          <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
-            {profile.name}
-          </span>
-        </h1>
+        <motion.h1
+          className="font-[family-name:var(--font-display)] text-5xl md:text-7xl font-semibold tracking-tight text-text mb-5"
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", stiffness: 200, damping: 24, delay: 0.1 }}
+        >
+          {profile.name}
+        </motion.h1>
 
-        <p className="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto">
+        <motion.p
+          className="text-xl md:text-2xl text-text-secondary mb-10 text-balance"
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", stiffness: 200, damping: 24, delay: 0.2 }}
+        >
           {profile.title} &mdash; {profile.tagline}
-        </p>
+        </motion.p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <a
+        <motion.div
+          className="flex flex-col sm:flex-row gap-3 justify-center mb-12"
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", stiffness: 200, damping: 24, delay: 0.3 }}
+        >
+          <motion.a
             href="#projects"
-            className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-colors font-medium"
+            className="px-7 py-2.5 bg-accent text-white rounded-full font-medium text-[15px]"
+            whileHover={{ scale: 1.04, backgroundColor: "var(--accent-hover)" }}
+            whileTap={{ scale: 0.97 }}
           >
             View My Work
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="#contact"
-            className="px-8 py-3 border border-gray-600 text-gray-300 rounded-lg hover:border-gray-500 hover:text-white transition-colors font-medium"
+            className="px-7 py-2.5 border border-border text-text rounded-full font-medium text-[15px]"
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.97 }}
           >
             Get In Touch
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
 
-        <div className="flex justify-center space-x-6">
-          <a href={`mailto:${profile.email}`} className="text-gray-400 hover:text-white transition-colors">
-            <MailIcon />
-          </a>
-          <a
-            href={profile.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors"
-          >
-            <GitHubIcon />
-          </a>
-          <a
-            href={profile.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors"
-          >
-            <LinkedInIcon />
-          </a>
-          <a
-            href={profile.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors"
-          >
-            <GlobeIcon />
-          </a>
-        </div>
+        <motion.div
+          className="flex justify-center gap-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.45 }}
+        >
+          {[
+            { href: `mailto:${profile.email}`, icon: MailIcon, external: false },
+            { href: profile.github, icon: GitHubIcon, external: true },
+            { href: profile.linkedin, icon: LinkedInIcon, external: true },
+            { href: profile.website, icon: GlobeIcon, external: true },
+          ].map(({ href, icon: Icon, external }) => (
+            <motion.a
+              key={href}
+              href={href}
+              target={external ? "_blank" : undefined}
+              rel={external ? "noopener noreferrer" : undefined}
+              className="text-text-tertiary hover:text-text transition-colors"
+              whileHover={{ scale: 1.15, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Icon />
+            </motion.a>
+          ))}
+        </motion.div>
       </div>
     </section>
   );

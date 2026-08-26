@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useReducedMotion } from "motion/react";
 import { profile } from "@/lib/data";
-import { MailIcon, GitHubIcon, LinkedInIcon } from "./icons";
+import { MailIcon, GitHubIcon, LinkedInIcon, DownloadIcon } from "./icons";
 
 const socials = [
   { href: `mailto:${profile.email}`, icon: MailIcon, external: false },
@@ -28,6 +28,14 @@ function HeroText() {
           Get In Touch
         </a>
       </div>
+      <a
+        href={profile.resume}
+        download
+        className="inline-flex items-center justify-center md:justify-start gap-1.5 text-accent font-medium text-[14px] mb-8"
+      >
+        Download CV
+        <DownloadIcon className="w-3.5 h-3.5" />
+      </a>
       <div className="flex justify-center md:justify-start gap-6">
         {socials.map(({ href, icon: Icon, external }) => (
           <a
@@ -128,6 +136,15 @@ function ParallaxHero() {
                   Get In Touch
                 </motion.a>
               </div>
+              <motion.a
+                href={profile.resume}
+                download
+                className="inline-flex items-center gap-1.5 text-accent font-medium text-[14px] mb-8"
+                whileHover={{ x: 2 }}
+              >
+                Download CV
+                <DownloadIcon className="w-3.5 h-3.5" />
+              </motion.a>
               <div className="flex justify-center md:justify-start gap-6">
                 {socials.map(({ href, icon: Icon, external }) => (
                   <motion.a

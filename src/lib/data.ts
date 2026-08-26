@@ -10,6 +10,7 @@ export const profile = {
   linkedin: "https://linkedin.com/in/menaxmaged",
   website: "https://menaxmaged.com",
   avatar: "https://www.gravatar.com/avatar/6081a95fe5ac5d6a8467ca1b3401baa7?size=800",
+  resume: "/Mena-Maged-Resume.pdf",
   summary:
     "Full-stack software engineer with hands-on experience building and maintaining web applications end-to-end since 2018, spanning front-end interfaces (HTML, CSS, JavaScript) and backend development (PHP, Node.js, MySQL, MongoDB). Track record of shipping and supporting production web systems as a developer, team lead, and co-founder.",
 };
@@ -193,6 +194,7 @@ export const projects = [
   {
     name: "Onesyo",
     tag: "Healthcare Platform",
+    url: "https://onesyo.com",
     stack: ["Node.js/Express", "Sequelize", "Next.js", "React Native (Expo)"],
     icon: "health",
     bullets: [
@@ -203,6 +205,7 @@ export const projects = [
   {
     name: "Zparez",
     tag: "Mercedes Spare Parts Marketplace",
+    url: undefined as string | undefined,
     stack: ["Next.js", "TypeScript", "TailwindCSS", "Node.js/Express", "Sequelize"],
     icon: "car",
     bullets: [
@@ -211,13 +214,138 @@ export const projects = [
     ],
   },
   {
-    name: "Darak",
-    tag: "SaaS Admin Dashboard",
+    name: "LVN",
+    tag: "SaaS Admin Dashboard (formerly Darak)",
+    url: "https://www.lvn-eg.com",
     stack: ["Next.js", "TailwindCSS", "Shadcn/UI", "Node.js/Express", "Sequelize"],
     icon: "dashboard",
     bullets: [
       "Developed an admin dashboard with JWT authentication, role-based user management, and real-time updates via TanStack Query.",
       "Built the Express/Sequelize backend API, deployed with PM2, powering user management and platform administration.",
+    ],
+  },
+];
+
+export const otherWork = [
+  {
+    name: "Beatroot Records",
+    url: "https://beatrootrecords.com",
+    icon: "/favicons/beatroot.png",
+    description: "Music label platform with artist management and distribution",
+  },
+  {
+    name: "Cinerama Film",
+    url: "https://cineramafilm.me",
+    icon: "/favicons/cinerama.png",
+    description: "Film production and entertainment content platform",
+  },
+  {
+    name: "Anubis Gaming",
+    url: "https://anubisgaming.com",
+    icon: "/favicons/anubis.png",
+    description: "Gaming community and esports tournament platform",
+  },
+  {
+    name: "Taleb App",
+    url: "https://talebapp.com",
+    icon: "/favicons/taleb.svg",
+    description: "Mobile application for digital storytelling",
+  },
+  {
+    name: "AMF",
+    url: "https://amf.com.eg",
+    icon: "/favicons/amf.png",
+    description: "Corporate business solutions and services",
+  },
+  {
+    name: "MNZ Technology",
+    url: "https://mnztechnology.com",
+    icon: "/favicons/mnz.png",
+    description: "Technology consulting and development services",
+  },
+  {
+    name: "El Metr",
+    url: "https://elmetr.com",
+    icon: "/favicons/elmetr.png",
+    description: "Urban transportation and mobility solutions",
+  },
+  {
+    name: "3BLE Sports",
+    url: "https://3blesports.com",
+    icon: "/favicons/3ble.png",
+    description: "Sports management and athlete development platform",
+  },
+  {
+    name: "Manassat Al Marwa",
+    url: "https://apps.apple.com/eg/app/%D9%85%D9%86%D8%B5%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D9%88%D8%A9/id6642664863",
+    icon: "/favicons/manassat.jpg",
+    description: "iOS app for community and social networking",
+  },
+  {
+    name: "SheHub",
+    url: "https://apps.apple.com/eg/app/shehub/id6736874148",
+    icon: "/favicons/shehub.jpg",
+    description: "Women empowerment and networking mobile app",
+  },
+  {
+    name: "Zpreneurs",
+    url: "https://zpreneurs.com",
+    icon: "/favicons/zpreneurs.png",
+    description: "Entrepreneurship and startup acceleration platform",
+  },
+];
+
+export const beyondWebDev = [
+  {
+    name: "CodeX OS",
+    tag: "Custom Operating System",
+    stack: ["Assembly", "x86"],
+    icon: "cpu",
+    url: "https://github.com/menaxmaged/codex-os",
+    bullets: ["Built a kernel from scratch in x86 Assembly — boot sequence, memory management, and low-level I/O."],
+  },
+  {
+    name: "Efhmni",
+    tag: "Accessibility & Machine Learning",
+    stack: ["Python", "Flutter", "Machine Learning"],
+    icon: "message",
+    url: "https://github.com/menaxmaged/Efhmni-Project",
+    bullets: [
+      "Built a sign-language translation app helping deaf users communicate — captures a signed video and translates it to text/speech.",
+    ],
+  },
+  {
+    name: "AVR Drivers",
+    tag: "Embedded Systems",
+    stack: ["C", "AVR"],
+    icon: "bolt",
+    url: "https://github.com/menaxmaged/Avr_drivers",
+    bullets: ["Low-level driver code for AVR microcontrollers — register-level I/O, no OS underneath."],
+  },
+  {
+    name: "Mikrotik User Generator",
+    tag: "Network Automation",
+    stack: ["Python", "Mikrotik RouterOS"],
+    icon: "router",
+    url: "https://github.com/menaxmaged/Mikrtoik-User-generator",
+    bullets: ["Automates bulk user provisioning on Mikrotik routers through the RouterOS API."],
+  },
+  {
+    name: "Spectrum Classifier",
+    tag: "Signal Processing Research",
+    stack: ["Python", "GNU Radio"],
+    icon: "waveform",
+    url: "https://github.com/menaxmaged/gr-classifier",
+    bullets: ["Classification algorithms for spectrum sharing — research into automated signal identification."],
+  },
+  {
+    name: "OpenCore Hackintosh Builds",
+    tag: "Systems Engineering",
+    stack: ["OpenCore", "UEFI", "ACPI"],
+    icon: "terminal",
+    url: "https://github.com/menaxmaged/CommetLake-OpenCore-Build",
+    bullets: [
+      "Custom OpenCore/UEFI configurations bringing macOS to unsupported hardware — ACPI patching, kext management, hardware bring-up.",
     ],
   },
 ];

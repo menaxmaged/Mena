@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useScroll, useMotionValueEvent } from "motion/react";
+import { profile } from "@/lib/data";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -53,6 +54,14 @@ export default function Nav() {
             </a>
           ))}
           <a
+            href={profile.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[13px] text-text-secondary hover:text-text transition-colors"
+          >
+            Resume
+          </a>
+          <a
             href="#contact"
             className="px-4 py-1.5 bg-accent text-white text-[13px] rounded-full hover:bg-accent-hover transition-colors"
           >
@@ -103,6 +112,15 @@ export default function Nav() {
                   {link.label}
                 </a>
               ))}
+              <a
+                href={profile.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[15px] text-text-secondary hover:text-text transition-colors py-2"
+                onClick={() => setOpen(false)}
+              >
+                Resume
+              </a>
               <a
                 href="#contact"
                 className="mt-2 px-4 py-2 bg-accent text-white text-[15px] rounded-full text-center"

@@ -79,6 +79,81 @@ export function DashboardIcon({ className = "w-8 h-8" }: { className?: string })
   );
 }
 
+export function CpuIcon({ className = "w-8 h-8" }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <rect x="6" y="6" width="12" height="12" rx="1.5" strokeWidth={1.75} />
+      <rect x="9.5" y="9.5" width="5" height="5" strokeWidth={1.75} />
+      <path strokeLinecap="round" strokeWidth={1.75} d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3" />
+    </svg>
+  );
+}
+
+export function MessageIcon({ className = "w-8 h-8" }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.75}
+        d="M4 5h16v11H8l-4 4V5z"
+      />
+    </svg>
+  );
+}
+
+export function BoltIcon({ className = "w-8 h-8" }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" />
+    </svg>
+  );
+}
+
+export function RouterIcon({ className = "w-8 h-8" }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <rect x="3" y="9" width="18" height="8" rx="1.5" strokeWidth={1.75} />
+      <path strokeLinecap="round" strokeWidth={1.75} d="M8 9V5M16 9V5M7 13h.01M11 13h.01M15 13h.01" />
+    </svg>
+  );
+}
+
+export function WaveformIcon({ className = "w-8 h-8" }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.75}
+        d="M2 12h3l2-6 3 12 3-14 3 14 3-12 2 6h3"
+      />
+    </svg>
+  );
+}
+
+export function TerminalIcon({ className = "w-8 h-8" }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <rect x="3" y="4" width="18" height="16" rx="2" strokeWidth={1.75} />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M7 9l3 3-3 3M12 15h5" />
+    </svg>
+  );
+}
+
+export function DownloadIcon({ className = "w-4 h-4" }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.75}
+        d="M12 4v11m0 0l-4-4m4 4l4-4M5 19h14"
+      />
+    </svg>
+  );
+}
+
 export function ExternalLinkIcon({ className = "w-4 h-4" }: { className?: string }) {
   return (
     <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">

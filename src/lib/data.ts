@@ -9,7 +9,7 @@ export const profile = {
   github: "https://github.com/menaxmaged",
   linkedin: "https://linkedin.com/in/menaxmaged",
   website: "https://menaxmaged.me",
-  avatar: "https://www.gravatar.com/avatar/6081a95fe5ac5d6a8467ca1b3401baa7?size=200",
+  avatar: "https://www.gravatar.com/avatar/6081a95fe5ac5d6a8467ca1b3401baa7?size=800",
   summary:
     "Full-stack software engineer with hands-on experience building and maintaining web applications end-to-end since 2018, spanning front-end interfaces (HTML, CSS, JavaScript) and backend development (PHP, Node.js, MySQL, MongoDB). Track record of shipping and supporting production web systems as a developer, team lead, and co-founder.",
 };
@@ -31,7 +31,7 @@ export const experience = [
     role: "IT and Web Developer",
     location: "Egypt",
     start: "April 2023",
-    end: "Present",
+    end: "January 2026",
     bullets: [
       "Develop and maintain full-stack web applications, covering both front-end interfaces and backend logic.",
       "Build and support backend systems and internal tools powering the organization's web platforms.",

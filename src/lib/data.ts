@@ -194,7 +194,7 @@ export const projects = [
     name: "Onesyo",
     tag: "Healthcare Platform",
     stack: ["Node.js/Express", "Sequelize", "Next.js", "React Native (Expo)"],
-    icon: "🏥",
+    icon: "health",
     bullets: [
       "Architected a multi-service healthcare platform: Express/Sequelize backend API, Next.js doctor/admin dashboard, Expo-based patient mobile app, and Next.js marketing site.",
       "Implemented real-time chat and presence with Socket.IO, doctor KYC approval workflows, and role-based dashboards for admins and doctors.",
@@ -204,7 +204,7 @@ export const projects = [
     name: "Zparez",
     tag: "Mercedes Spare Parts Marketplace",
     stack: ["Next.js", "TypeScript", "TailwindCSS", "Node.js/Express", "Sequelize"],
-    icon: "🚗",
+    icon: "car",
     bullets: [
       "Built a full-stack e-commerce marketplace: TypeScript/Next.js storefront and admin dashboard backed by an Express/Sequelize/MariaDB API.",
       "Implemented multi-seller product listings, vehicle-based recommendations, and order/inventory management APIs.",
@@ -214,7 +214,7 @@ export const projects = [
     name: "Darak",
     tag: "SaaS Admin Dashboard",
     stack: ["Next.js", "TailwindCSS", "Shadcn/UI", "Node.js/Express", "Sequelize"],
-    icon: "📊",
+    icon: "dashboard",
     bullets: [
       "Developed an admin dashboard with JWT authentication, role-based user management, and real-time updates via TanStack Query.",
       "Built the Express/Sequelize backend API, deployed with PM2, powering user management and platform administration.",

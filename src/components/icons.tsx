@@ -46,6 +46,39 @@ export function PinIcon({ className = "w-6 h-6" }: { className?: string }) {
   );
 }
 
+export function HealthIcon({ className = "w-8 h-8" }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" strokeWidth={1.75} />
+      <path strokeLinecap="round" strokeWidth={1.75} d="M12 8v8M8 12h8" />
+    </svg>
+  );
+}
+
+export function CarIcon({ className = "w-8 h-8" }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.75}
+        d="M4 16V10a2 2 0 0 1 2-2h2l2-3h4l2 3h2a2 2 0 0 1 2 2v6M4 16h16"
+      />
+      <circle cx="8" cy="18" r="1.5" strokeWidth={1.75} />
+      <circle cx="16" cy="18" r="1.5" strokeWidth={1.75} />
+    </svg>
+  );
+}
+
+export function DashboardIcon({ className = "w-8 h-8" }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="2" strokeWidth={1.75} />
+      <path strokeLinecap="round" strokeWidth={1.75} d="M8 17V11M12 17V7M16 17v-4" />
+    </svg>
+  );
+}
+
 export function ExternalLinkIcon({ className = "w-4 h-4" }: { className?: string }) {
   return (
     <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">

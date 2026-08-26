@@ -6,7 +6,7 @@ Mena Maged is a full-stack software engineer with hands-on experience building a
 
 ## Profile
 
-- [Portfolio](https://menaxmaged.me): personal site — experience, projects, education, and contact information
+- [Portfolio](https://menaxmaged.com): personal site — experience, projects, education, and contact information
 - [GitHub](https://github.com/menaxmaged): open-source and personal projects
 - [LinkedIn](https://linkedin.com/in/menaxmaged): professional profile and work history
 - Email: menaxmaged@gmail.com

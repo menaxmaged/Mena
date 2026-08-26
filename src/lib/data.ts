@@ -8,7 +8,7 @@ export const profile = {
   phoneHref: "+201091050843",
   github: "https://github.com/menaxmaged",
   linkedin: "https://linkedin.com/in/menaxmaged",
-  website: "https://menaxmaged.me",
+  website: "https://menaxmaged.com",
   avatar: "https://www.gravatar.com/avatar/6081a95fe5ac5d6a8467ca1b3401baa7?size=800",
   summary:
     "Full-stack software engineer with hands-on experience building and maintaining web applications end-to-end since 2018, spanning front-end interfaces (HTML, CSS, JavaScript) and backend development (PHP, Node.js, MySQL, MongoDB). Track record of shipping and supporting production web systems as a developer, team lead, and co-founder.",

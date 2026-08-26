@@ -1,4 +1,4 @@
-# Project plan — menaxmaged.me portfolio
+# Project plan — menaxmaged.com portfolio
 
 Master status doc. Day plans live in `plans/`.
 

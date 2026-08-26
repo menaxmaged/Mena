@@ -1,5 +1,5 @@
 import { profile } from "@/lib/data";
-import { MailIcon, PhoneIcon, PinIcon, GlobeIcon } from "./icons";
+import { MailIcon, PhoneIcon, PinIcon } from "./icons";
 import ContactForm from "./ContactForm";
 import Reveal from "./Reveal";
 
@@ -7,7 +7,6 @@ const items = [
   { icon: MailIcon, label: "Email", value: profile.email, href: `mailto:${profile.email}` },
   { icon: PhoneIcon, label: "Phone", value: profile.phone, href: `tel:${profile.phoneHref}` },
   { icon: PinIcon, label: "Location", value: profile.location, href: null },
-  { icon: GlobeIcon, label: "Website", value: "menaxmaged.me", href: profile.website },
 ];
 
 export default function Contact() {

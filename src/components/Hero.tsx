@@ -4,13 +4,12 @@ import Image from "next/image";
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useReducedMotion } from "motion/react";
 import { profile } from "@/lib/data";
-import { MailIcon, GitHubIcon, LinkedInIcon, GlobeIcon } from "./icons";
+import { MailIcon, GitHubIcon, LinkedInIcon } from "./icons";
 
 const socials = [
   { href: `mailto:${profile.email}`, icon: MailIcon, external: false },
   { href: profile.github, icon: GitHubIcon, external: true },
   { href: profile.linkedin, icon: LinkedInIcon, external: true },
-  { href: profile.website, icon: GlobeIcon, external: true },
 ];
 
 function HeroText() {
@@ -49,7 +48,7 @@ function HeroText() {
 function HeroPortrait() {
   return (
     <div className="relative mx-auto md:mx-0 md:ml-auto w-full max-w-sm">
-      <div className="absolute -inset-8 -z-10 rounded-full bg-accent/10 blur-3xl" />
+      <div className="absolute -inset-4 -z-10 rounded-full bg-accent/10 blur-3xl" />
       <div className="aspect-square overflow-hidden rounded-[2.5rem] ring-1 ring-border shadow-2xl shadow-black/10">
         <Image
           src={profile.avatar}
@@ -66,7 +65,7 @@ function HeroPortrait() {
 
 function StaticHero() {
   return (
-    <section id="home" className="min-h-screen flex items-center px-6 pt-14">
+    <section id="home" className="min-h-screen overflow-x-clip flex items-center px-6 pt-14">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <HeroText />
         <HeroPortrait />
@@ -92,8 +91,8 @@ function ParallaxHero() {
   const glowOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
 
   return (
-    <section id="home" ref={sectionRef} className="relative h-[170vh]">
-      <div className="sticky top-0 h-screen flex items-center px-6 pt-14 overflow-hidden">
+    <section id="home" ref={sectionRef} className="relative overflow-x-clip md:h-[170vh]">
+      <div className="md:sticky md:top-0 md:h-screen flex items-center px-6 pt-28 pb-16 md:pt-14 md:pb-0 md:overflow-hidden">
         <motion.div className="pointer-events-none absolute inset-0 -z-10" style={{ opacity: glowOpacity }}>
           <div className="absolute right-0 top-1/2 h-[36rem] w-[36rem] -translate-y-1/2 rounded-full bg-accent/10 blur-3xl" />
         </motion.div>
@@ -154,7 +153,7 @@ function ParallaxHero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ type: "spring", stiffness: 200, damping: 22, delay: 0.1 }}
           >
-            <div className="absolute -inset-8 -z-10 rounded-full bg-accent/10 blur-3xl" />
+            <div className="absolute -inset-4 -z-10 rounded-full bg-accent/10 blur-3xl" />
             <div className="aspect-square overflow-hidden rounded-[2.5rem] ring-1 ring-border shadow-2xl shadow-black/10">
               <Image
                 src={profile.avatar}

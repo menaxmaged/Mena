@@ -1,0 +1,39 @@
+# Mena Maged
+
+> Full-Stack Software Engineer and Co-Founder/CTO at CodeX Technologies, based in Giza, Egypt. Building web applications end-to-end since 2018.
+
+Mena Maged is a full-stack software engineer with hands-on experience building and maintaining production web applications since 2018, spanning front-end interfaces (HTML, CSS, JavaScript) and backend development (PHP, Node.js, MySQL, MongoDB). He co-founded and serves as CTO of CodeX Technologies, and holds a B.Sc. in Computer Science and Information Technology from the Egyptian E-Learning University (EELU).
+
+## Profile
+
+- [Portfolio](https://menaxmaged.me): personal site — experience, projects, education, and contact information
+- [GitHub](https://github.com/menaxmaged): open-source and personal projects
+- [LinkedIn](https://linkedin.com/in/menaxmaged): professional profile and work history
+- Email: menaxmaged@gmail.com
+- Location: Giza, Egypt
+
+## Experience
+
+- Co-Founder and CTO, CodeX Technologies — Giza, Egypt (Nov 2025 – Present)
+- IT and Web Developer, OBM Education — Egypt (Apr 2023 – Present)
+- Developers Supervisor, STEM High School for Boys - 6th of October (Aug 2020 – Jul 2021)
+- Web Developer, Mirus — Cairo, Egypt (Dec 2019 – Sep 2021)
+- Web Developer, Plebits — Cairo, Egypt (Aug 2019 – Feb 2021)
+- Chief Technology Officer, STEM High School for Boys - 6th of October (Sep 2018 – Aug 2020)
+- Head of IT Committee, TEDxYouth@MaadiSTEM (Jul 2018 – Dec 2018)
+- IT Supervisor, STEM High School for Boys - 6th of October (Jan 2018 – Sep 2018)
+
+## Projects
+
+- Onesyo — multi-service healthcare platform: Express/Sequelize backend API, Next.js doctor/admin dashboard, Expo-based patient mobile app, real-time chat via Socket.IO
+- Zparez — Mercedes spare parts marketplace: Next.js/TypeScript storefront and admin, Express/Sequelize/MariaDB API, multi-seller listings
+- Darak — SaaS admin dashboard: Next.js/TailwindCSS/Shadcn UI, JWT auth, role-based access, Express/Sequelize backend
+
+## Education
+
+- B.Sc. Computer Science and Information Technology, The Egyptian E-Learning University (EELU) — Fayoum, Egypt (Mar 2021 – Jun 2025)
+- STEM Curriculum, High School Diploma, STEM High School for Boys - 6th of October — Giza, Egypt (Oct 2017 – Aug 2020)
+
+## Skills
+
+Front-end: HTML, CSS, JavaScript, Angular, Flutter. Backend: PHP, Node.js, Express.js, MySQL, MongoDB. Languages: PHP, JavaScript, Python, Java, Dart. Supporting: system administration, network design/administration/security, CCNA, Mikrotik, AWS, VMware ESXi, Windows Server, IT/project management, technical team leadership, graphic design.
